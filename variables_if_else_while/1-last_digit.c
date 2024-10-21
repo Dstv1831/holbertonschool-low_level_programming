@@ -14,7 +14,9 @@ int main(void)
 {
 	int n;
 	int ld;
-	char greater_5, zero, less_6;
+	char greater_5[] = "and is greater than 5";
+	char zero[] = "and is 0";
+	char less_6[] = "and is less than 6 and not 0";
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
