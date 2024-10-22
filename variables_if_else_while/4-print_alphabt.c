@@ -10,8 +10,8 @@ int main(void)
 {
 	int i;
 
-	for (i = 97; i < 123; i++)
-		if (i != 101 || i != 113)
+	for (i = 'a'; i <= 'z'; i++)
+		if (i != 'e' || i != 'q')
 			putchar(i);
 	putchar('\n');
 
