@@ -8,26 +8,14 @@
 void print_alphabet_x10(void)
 {
 	int i;
-	int n;
+	char x;
 
-	for (n = 0; n <= 10; n++)
+	i = 0;
+	x = 'a';
+	while (i < 10)
 	{
-		for (i = 97; i < 123; i++)
-			putchar(i);
-		putchar('\n');
+	       while (x <= 'z')
+		       _putchar(x);
+	       _putchar('\n');
 	}
-	return (0);
-}
-
-/**
- * main - Print the alphabet by
- * calling the print_alphabet_x10 function()
- *
- * Return: Always 0 (Succes)
- */
-
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
 }
