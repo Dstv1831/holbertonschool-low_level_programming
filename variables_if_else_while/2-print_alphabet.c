@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+/**
+ * main - Print the the alphabet with
+ * the putchar() function
+ *
+ * Return: Always 0 (Succes)
+ */
+
+int main(void)
+{
+	for (int i = 97; i < 122; i++)
+		putchar(i);
+	return (0);
+}
