@@ -9,12 +9,8 @@
 
 int _islower(int c)
 {
-	int answer;
+	if (c >= 'a' && c =< 'z')
+		return (1);
 
-	answer = 0;
-
-	if (c > 'a' && c < 'z')
-		answer = 1;
-
-	return (answer);
+	return (0);
 }
