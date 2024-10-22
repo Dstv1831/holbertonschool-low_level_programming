@@ -17,5 +17,5 @@ int main(void)
 		for (i = 0; i < 9; i++)
 			putchar(',');
 	}
-	return (0)
+	return (0);
 }
