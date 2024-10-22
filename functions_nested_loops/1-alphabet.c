@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet - Function in charge of
- * printing the alphabet by
+ * printing the alphabet
  */
 
 void print_alphabet(void)
