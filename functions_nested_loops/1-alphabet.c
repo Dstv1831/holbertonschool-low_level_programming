@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * print_alphabet - Function in charge of
@@ -10,20 +10,7 @@ void print_alphabet(void)
 	int i;
 
 	for (i = 97; i < 123; i++)
-		putchar(i);
-	putchar('\n');
-	return (0);
-}
-
-/**
- * main - Print the alphabet by
- * calling the print_alphabet function()
- *
- * Return: Always 0 (Succes)
- */
-
-int main(void)
-{
-	print_alphabet();
+		_putchar(i);
+	_putchar('\n');
 	return (0);
 }
