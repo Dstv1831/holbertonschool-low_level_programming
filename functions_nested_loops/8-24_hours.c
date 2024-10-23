@@ -21,11 +21,11 @@ void jack_bauer(void)
 	{
 		while (H < 2)
 		{
-			while (h < 9)
+			while (h < 10)
 			{
-				while (m < 60)
+				while (m < 6)
 				{
-					while (s < 60)
+					while (s < 10)
 					{
 						_putchar('0' + H);
 						_putchar('0' + h);
