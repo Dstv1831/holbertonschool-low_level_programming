@@ -14,8 +14,8 @@ void jack_bauer(void)
 
 	m = 0;
 	h = 0;
-	
-	while (h < 23)
+
+	while (h < 24)
 	{
 		while (m < 60)
 		{
@@ -28,5 +28,6 @@ void jack_bauer(void)
 			m++;
 		}
 		h++;
+		m = 0;
 	}
 }
