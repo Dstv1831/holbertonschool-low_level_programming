@@ -17,8 +17,12 @@ void times_table(void)
 		{
 			ans = i * j;
 			_putchar('0' + ans);
-			_putchar(',' + ans);
-			_putchar(' ' + ans);
+			if (j != 9)
+			{
+				_putchar(',' + ans);
+				_putchar(' ' + ans);
+				_putchar(' ' + ans);
+			}
 		}
 		_putchar('\n');
 	}
