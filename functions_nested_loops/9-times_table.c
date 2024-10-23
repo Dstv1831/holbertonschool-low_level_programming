@@ -19,12 +19,11 @@ void times_table(void)
 			_putchar('0' + ans);
 			if (j != 9)
 			{
-				_putchar(',' + ans);
-				_putchar(' ' + ans);
-				_putchar(' ' + ans);
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 			}
 		}
 		_putchar('\n');
-		j = 0;
 	}
 }
