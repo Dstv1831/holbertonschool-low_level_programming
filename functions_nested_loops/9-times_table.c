@@ -3,8 +3,6 @@
 /**
  * times_table - Print the 9 times table
  * starting form 0
- *
- * Return: Every minute in a new line.
  */
 
 void times_table(void)
