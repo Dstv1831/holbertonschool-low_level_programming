@@ -24,10 +24,12 @@ void times_table(void)
 				_putchar(' ');
 			}
 			else
+			{
 				_putchar('0' + ans);
 				_putchar(', ');
 				_putchar(' ');
 				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
