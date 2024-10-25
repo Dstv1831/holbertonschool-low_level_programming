@@ -20,11 +20,12 @@ int main(void)
 
 			if (d1 == 8 && d2 == 9)
 				break;
+
 			putchar(',');
 			putchar(' ');
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
+
