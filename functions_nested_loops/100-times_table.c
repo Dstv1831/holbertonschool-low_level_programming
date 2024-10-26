@@ -21,21 +21,21 @@ void print_times_table(int n)
 
 				ans = i * j;
 
-				if (prod <= 99)
+				if (ans <= 99)
 					_putchar(' ');
-				if (prod <= 9)
+				if (ans <= 9)
 					_putchar(' ');
 
-				if (prod >= 100)
+				if (ans >= 100)
 				{
-					_putchar((prod / 100) + '0');
-					_putchar(((prod / 10)) % 10 + '0');
+					_putchar((ans / 100) + '0');
+					_putchar(((ans / 10)) % 10 + '0');
 				}
-				else if (prod <= 99 && prod >= 10)
+				else if (ans <= 99 && ans >= 10)
 				{
-					_putchar((prod / 10) + '0');
+					_putchar((ans / 10) + '0');
 				}
-				_putchar((prod % 10) + '0');
+				_putchar((ans % 10) + '0');
 			}
 			_putchar('\n');
 		}
