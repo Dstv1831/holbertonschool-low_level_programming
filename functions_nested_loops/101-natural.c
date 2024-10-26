@@ -21,7 +21,7 @@ int main(void)
 			total += counter;
 		counter++;
 	}
-	printf("%d\n", counter);
-	
+	printf("%d\n", total);
+
 	return (0);
 }
