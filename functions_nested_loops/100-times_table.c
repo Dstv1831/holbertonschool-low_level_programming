@@ -16,19 +16,26 @@ void print_times_table(int n)
 		{
 			for (j = 0; j <= n; j++)
 			{
-				ans = i * j;
-				if (ans <= 9 && j > 0)
-					_putchar(' ');
-				else if (ans > 9)
-					_putchar('0' + (ans / 10));
+				_putchar(',');
+				_putchar(' ');
 
-				_putchar('0' + (ans % 10));
-				if (j != n)
+				ans = i * j;
+
+				if (prod <= 99)
+					_putchar(' ');
+				if (prod <= 9)
+					_putchar(' ');
+
+				if (prod >= 100)
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
+					_putchar((prod / 100) + '0');
+					_putchar(((prod / 10)) % 10 + '0');
 				}
+				else if (prod <= 99 && prod >= 10)
+				{
+					_putchar((prod / 10) + '0');
+				}
+				_putchar((prod % 10) + '0');
 			}
 			_putchar('\n');
 		}
