@@ -33,7 +33,7 @@ int main(void)
 	a2 = a % 1000000000;
 	b1 = b / 1000000000;
 	b2 = b % 1000000000;
-	while (count < 98)
+	while (count < 99)
 	{
 		fibhalf1 = a1 + b1;
 		fibhalf2 = a2 + b2;
@@ -43,7 +43,7 @@ int main(void)
 			fibhalf2 %= 1000000000;
 		}
 		printf("%lu%lu", fibhalf1, fibhalf2);
-		if (count != 97)
+		if (count != 98)
 			printf(", ");
 		a1 = b1;
 		a2 = b2;
