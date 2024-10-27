@@ -23,10 +23,7 @@ int main(void)
 		sum = a + b;
 		a = b;
 		b = sum;
-		if (count == 92)
-			printf("%lu\n", sum);
-		else
-			printf("%lu, ", sum);
+		printf("%lu, ", sum);
 		count++;
 	}
 	a1 = a / 1000000000;
