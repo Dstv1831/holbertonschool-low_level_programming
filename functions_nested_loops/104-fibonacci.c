@@ -9,15 +9,11 @@
 
 int main(void)
 {
-	int count;
-	unsigned long a, b, sum;
+	int count = 1;
+	unsigned long a = 0, b = 1, sum;
 	unsigned long a1, a2, b1, b2;
 	unsigned long fibhalf1, fibhalf2;
 
-	count = 1;
-	sum = 0;
-	a = 0;
-	b = 1;
 	while (count < 93)
 	{
 		sum = a + b;
@@ -26,10 +22,12 @@ int main(void)
 		printf("%lu, ", sum);
 		count++;
 	}
+
 	a1 = a / 1000000000;
 	a2 = a % 1000000000;
 	b1 = b / 1000000000;
 	b2 = b % 1000000000;
+
 	while (count < 99)
 	{
 		fibhalf1 = a1 + b1;
