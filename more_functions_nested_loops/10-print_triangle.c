@@ -6,7 +6,7 @@
  * @size: Size of the triangle.
  */
 
-void print_square(int size)
+void print_triangle(int size)
 {
 	int i, j;
 
