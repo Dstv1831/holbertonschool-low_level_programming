@@ -1,5 +1,5 @@
 /**
- * File - Header file conatining 
+ * File - Header file containing 
  * forward declaration for all the functions
  */
 
