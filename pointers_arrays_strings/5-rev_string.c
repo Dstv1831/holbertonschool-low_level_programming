@@ -30,9 +30,9 @@ void rev_string(char *s)
 		len++;
 
 	start = s;
-	end = s + len - 1 ;
+	end = s + len - 1;
 
-	for (i = 0; i <= len / 2 ; i++)
+	for (i = 0; i < len / 2 ; i++)
 	{
 		temp = *end;
 		*end = *start;
