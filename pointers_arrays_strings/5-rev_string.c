@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
  * rev_string - function that reverses a string
@@ -12,12 +13,12 @@ void rev_string(char *s)
 	char *start, *end, temp;
 
 	start = s;
-	len = sizeof (s);
-	end = s + len;
+	len = strlen(s);
+	end = s + len - 1;
 
 	/**
-	 * len/2 because the string swap its 
-	 * completed, when the pointer start and end 
+	 * len/2 because the string swap its
+	 * completed, when the pointer start and end
 	 * reach cross in the middle
 	 *
 	 * a	b	c	d	e
@@ -25,7 +26,7 @@ void rev_string(char *s)
 	 * st				end
 	 *
 	 * pointer notation - s[0] and *s are the same
-	 * which is value of the memory slot of pointer s at position 0 
+	 * which is value of the memory slot of pointer s at position 0
 	 * therefore s[i++] = *s++ , going trough the values of the pointer
 	 */
 
