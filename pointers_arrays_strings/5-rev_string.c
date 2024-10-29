@@ -8,12 +8,10 @@
 
 void rev_string(char *s)
 {
-	int len, i;
+	int len = 0, i = 0;
 	char *start, *end, temp;
 
-	start = s;
-	len = sizeof (s) + 1;
-	end = s + len ;
+
 
 	/**
 	 * len/2 because the string swap its
@@ -28,6 +26,11 @@ void rev_string(char *s)
 	 * which is value of the memory slot of pointer s at position 0
 	 * therefore s[i++] = *s++ , going trough the values of the pointer
 	 */
+	while (s[i++])
+		len++;
+
+	start = s;
+	end = s + len - 1 ;
 
 	for (i = 0; i <= len / 2 ; i++)
 	{
