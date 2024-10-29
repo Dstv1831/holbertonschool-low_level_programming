@@ -8,8 +8,6 @@
 
 void _puts(char *str)
 {
-	int lenght = 0;
-
 	/**
 	 * this condition (*str) is iqual to (*str = '\0')
 	 * where '\0' is the last value of every string
