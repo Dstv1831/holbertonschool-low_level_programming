@@ -13,7 +13,7 @@ void _puts(char *str)
 	 * where '\0' is the last value of every string
 	 * also '\0' in ASCII is of value 0
 	 */
-	while (*str++)
+	while (*str)
 		_putchar(*str++);
 	_putchar('\n');
 }
