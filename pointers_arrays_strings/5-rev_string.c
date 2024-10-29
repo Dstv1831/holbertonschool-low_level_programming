@@ -12,7 +12,7 @@ void rev_string(char *s)
 	char *start, *end, temp;
 
 	start = s;
-	len = sizeof (s) + 1;
+	len = sizeof (s);
 	end = s + len;
 
 	/**
@@ -29,7 +29,7 @@ void rev_string(char *s)
 	 * therefore s[i++] = *s++ , going trough the values of the pointer
 	 */
 
-	for (i = 0; i < len / 2 ; i++)
+	for (i = 0; i <= len / 2 ; i++)
 	{
 		temp = *end;
 		*end = *start;
