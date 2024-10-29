@@ -13,7 +13,7 @@ void rev_string(char *s)
 
 	start = s;
 	len = sizeof (s) + 1;
-	end = s + len - 1;
+	end = s + len ;
 
 	/**
 	 * len/2 because the string swap its
