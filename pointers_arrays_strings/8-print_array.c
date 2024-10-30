@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * puts_half - function that prints n elements
+ * print_array - function that prints n elements
  * of an array of integers, followed by a new line.
  * @a: String parameter.
  * @n: number of elements to be printed.
