@@ -13,13 +13,18 @@
 
 char *_strchr(char *s, char c)
 {
-	while (*s)
+	int i = 0;
+
+	while (s[i] != '\0')
 	{
-		if (*s == c)
-		{
-			return (s);
-			s++;
-		}
+		if (s[i] == c)
+			return (s + i);
+			/**
+			 * *(s + i) = s[i]
+			 * different than (s + i) which
+			 * means pointer on (s + i positions)
+			 */
+		i++;
 	}
 	return ('\0');
 }
