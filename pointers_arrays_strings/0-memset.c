@@ -13,13 +13,14 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i = 0;
+	unsigned char *mem = s;
 
 	while (i <= n)
 	{
 		/* s[i] - pointer value in that memory slot */
-		s[i] = b;
+		mem[i] = b;
 		i++;
 	}
 
-	return (s);
+	return (mem);
 }
