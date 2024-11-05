@@ -19,7 +19,7 @@ char *_strstr(char *haystack, char *needle)
 	/**
 	 * run through the values of the pointer until '/0'
 	 */
-	if (*needle == "")
+	if (*needle == 0)
 		return (haystack);
 
 
