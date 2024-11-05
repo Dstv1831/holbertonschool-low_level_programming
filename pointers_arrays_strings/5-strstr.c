@@ -30,7 +30,7 @@ char *_strstr(char *haystack, char *needle)
 			while (haystack[i] == needle[i])
 			{
 				i++;
-				if (*needle != '\0')
+				if (needle[i] == '\0')
 					return (haystack);
 					/**
 					 * IMPORTANT - haystack[i] its a different value
