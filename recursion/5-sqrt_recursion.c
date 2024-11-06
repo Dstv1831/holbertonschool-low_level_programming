@@ -21,7 +21,7 @@ int _sqrt_recursion(int n)
 	 * square, adds a parameter in the function.
 	 */
 
-	return substraction(n, 1, 0);
+	return (substraction(n, 1, 0));
 }
 
 /**
