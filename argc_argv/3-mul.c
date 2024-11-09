@@ -2,15 +2,14 @@
 #include <stdlib.h>
 
 /**
- * main - prints all the arguments
- * passed to the program
+ * main - prints the multiplication
+ * of two numbers
  *
  * @argv: Vector of strings (program arguments)
  * @argc: Argument counter
  *
  * Return: success 0
  */
-
 int main(int argc, char *argv[])
 {
 	int res = 0;
