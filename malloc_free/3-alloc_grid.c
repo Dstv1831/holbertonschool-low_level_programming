@@ -35,13 +35,15 @@ int **alloc_grid(int width, int height)
 	 */
 
 	for (hei_ind = 0; hei_ind < height; hei_ind++)
+	{
 		twodimptr[hei_ind] = malloc(sizeof(int) * width);
-
-	if (twodimptr == NULL)
-		return (NULL);
+		if (twodimptr[hei_ind] == NULL)
+			free (twodimptr);
+	}
 
 	for (hei_ind = 0; hei_ind < height; hei_ind++)
 		for (wid_ind = 0; wid_ind < width; wid_ind++)
 			twodimptr[hei_ind][wid_ind] = 0;
+	
 	return (twodimptr);
 }
