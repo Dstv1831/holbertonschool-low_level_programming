@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * free_grid - function that frees a 2 
+ * free_grid - function that frees a 2
  * dimensional grid previously created
  *
  * @grid: Grid to free
@@ -14,7 +14,7 @@ void free_grid(int **grid, int height)
 {
 	int index;
 
-	for (index = 0; index <= height; index ++)
-		free (grid[index]);
-	free (grid);
+	for (index = 0; index <= height; index++)
+		free(grid[index]);
+	free(grid);
 }
