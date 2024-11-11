@@ -26,6 +26,9 @@ int **alloc_grid(int width, int height)
 
 	twodimptr = malloc(sizeof(int *) * height);
 
+	if (twodimptr == NULL)
+		return (NULL);
+
 	/**
 	 * Allocate memery for array of integers (rows),
 	 * will have to itterate on my number of columns (height)
