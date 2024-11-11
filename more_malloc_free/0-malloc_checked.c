@@ -7,6 +7,7 @@
  *
  * @b: Factor of the Size of the memory to allocate.
  *
+ * Return: Pointer with the allocated memory.
  */
 
 void *malloc_checked(unsigned int b)
