@@ -48,6 +48,7 @@ int **alloc_grid(int width, int height)
 				free(twodimptr[hei_ind]);
 			free(twodimptr);
 			return (NULL);
+		}
 	}
 
 	for (hei_ind = 0; hei_ind < height; hei_ind++)
