@@ -39,7 +39,7 @@ char copy(char *str_src, char *str_des)
 	for (i = 0; str_src; i++)
 		str_des[i] = str_src[i];
 
-	str_des[i] == '\0';
+	str_des[i] = '\0';
 
 	return (str_des);
 
