@@ -39,7 +39,7 @@ char copy(char *str_src, char *str_des)
 	for (i = 0; str_src; i++)
 		str_des[i] = str_src[i];
 
-	str[i] == '\0';
+	str_des[i] == '\0';
 
 	return (str_des);
 
@@ -84,5 +84,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new_dog->age = age;
 	new_dog->owner = owner;
 
-	return (luna);
+	return (new_dog);
 }
