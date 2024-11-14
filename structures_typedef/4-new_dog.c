@@ -32,7 +32,7 @@ int len(char *string)
  *
  */
 
-char copy(char *str_src, char *str_des)
+char *copy(char *str_src, char *str_des)
 {
 	int i;
 
