@@ -14,9 +14,12 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	/* Either way is ok "(*d)." and "d->" */
+	if (d != NULL)
+	{
+		/* Either way is ok "(*d)." and "d->" */
 
-	(*d).name = name;
-	d->owner = owner;
-	d->age = age;
+		(*d).name = name;
+		d->owner = owner;
+		d->age = age;
+	}
 }
