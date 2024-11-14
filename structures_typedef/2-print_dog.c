@@ -15,7 +15,7 @@ void print_dog(struct dog *d)
 		/* Either way is ok "(*d)." and "d->" */
 
 		printf("Name: %s", (*d).name);
-		printf("Age: %d", d->age);
+		printf("Age: %f", d->age);
 		printf("Owner: %s", d->owner);
 	}
 	else
