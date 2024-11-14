@@ -32,7 +32,7 @@ int len(char *string)
  *
  */
 
-char *copy(char *str_src, char *str_des)
+char *copy(char *str_des, char *str_src)
 {
 	int i;
 
@@ -66,13 +66,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	new_dog->name = malloc(len(name) + 1);
-	copy(name, new_dog->name);
 
 	if (new_dog->name == NULL)
 		return (NULL);
 
 	new_dog->owner = malloc(len(owner) + 1);
-	copy(owner, new_dog->owner);
 
 	if (new_dog->owner == NULL)
 	{
@@ -82,9 +80,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	new_dog->name = name;
+	new_dog->name = copy(new_dog->name, name);
 	new_dog->age = age;
-	new_dog->owner = owner;
+	new_dog->owner = copy(new_dog->owner, owner);
 
 	return (new_dog);
 }
