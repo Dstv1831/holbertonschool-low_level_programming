@@ -34,7 +34,7 @@ int len(char *string)
 
 char *copy(char *str_des, char *str_src)
 {
-	int i;
+	int i = 0;
 
 	for (i = 0; str_src; i++)
 		str_des[i] = str_src[i];
