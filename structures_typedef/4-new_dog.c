@@ -36,7 +36,7 @@ char *copy(char *str_des, char *str_src)
 {
 	int i = 0;
 
-	for (i = 0; str_src; i++)
+	for (i = 0; str_src[i]; i++)
 		str_des[i] = str_src[i];
 
 	str_des[i] = '\0';
