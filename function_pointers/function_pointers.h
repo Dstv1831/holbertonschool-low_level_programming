@@ -2,11 +2,13 @@
 #define FUNPOINTERS_H
 
 /**
- * File - Header file containing
- * forward declaration for all the functions
+ * print_name - Prints a name
+ *
+ * @name: Name to print
+ * @f: pointer to function to call
+ *
  */
 
-int _putchar(char c);
 void print_name(char *name, void (*f)(char *));
 
 #endif
