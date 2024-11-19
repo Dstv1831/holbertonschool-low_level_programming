@@ -27,6 +27,12 @@ int main(int argc, char *argv[])
 		printf("%s\n", msg);
 		exit(98);
 	}
+	else if (get_op_func(operator) == NULL)
+	{
+		printf("%s\n", msg);
+                exit(99);
+
+	}
 	else if ((*operator == '/' && num2 == 0) || (*operator == '%' && num2 == 0))
 	{
 		printf("%s\n", msg);
