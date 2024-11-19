@@ -16,7 +16,7 @@
 int main(int argc, char *argv[])
 {
 	int  num1, num2, res = 0;
-	char *operator, msg = "Error";
+	char operator, msg[] = "Error";
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
