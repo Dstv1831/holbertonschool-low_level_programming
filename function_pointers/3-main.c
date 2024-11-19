@@ -34,17 +34,9 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		res = ((*get_op_func(char *operator))(num1, num2));
+		res = get_op_func(operator)(num1, num2);
 		printf("%d\n", res);
 	}
-}
-
-
-
-
-
-
-
 
 	return (0);
 }
