@@ -5,7 +5,7 @@
  * print_numbers - print numbers followed by a new line
  *
  * @separator: string to be printed between numbers
- * n: number of integers passed to the function
+ * @n: number of integers passed to the function
  *
  * Return: 0 success
  *
