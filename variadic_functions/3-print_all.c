@@ -61,7 +61,7 @@ void print_s(va_list arguments)
 		printf("(nil)");
 		return;
 	}
-	
+
 	printf("%s", s);
 }
 
