@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    print_numbers(", ", 4, 0, 98, -1024, 402);
+    print_strings(", ", 4, "Jay", 0, "Django", "David");
     return (0);
 }
