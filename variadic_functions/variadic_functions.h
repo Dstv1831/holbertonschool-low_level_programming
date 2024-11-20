@@ -2,8 +2,11 @@
 #define VARFUN_H
 
 /**
- * forward declaration of the functions to use
- * when including the header file
+ * sum_them_all - Function that adds all the parameters
+ *
+ * @n: Number of parameters
+ *
+ * Return: 0 success
  *
  */
 
