@@ -2,7 +2,7 @@
 
 /**
  * print_dlistint - Prints all the elements of a dlistint_t list
- * @h: Pointer to the list_t list.
+ * @h: Pointer to the dlistint_t list.
  *
  * Return: Number of nodes in h.
  */
