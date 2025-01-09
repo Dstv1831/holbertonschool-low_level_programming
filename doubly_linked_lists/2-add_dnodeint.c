@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint - Adds a new node at the beginning
+ * add_dnodeint - Adds a new node at the beginning
  * of a dlistint_t list.
  * @head: Pointer to the head pointer of the dlistint_t list.
  * @n: The int value be added to the dlistint_t list.
@@ -10,7 +10,7 @@
  * the address of the new element.
  */
 
-dlistint_t *add_nodeint(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new;
 
