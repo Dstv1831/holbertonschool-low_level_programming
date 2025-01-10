@@ -9,6 +9,7 @@
  *         - @b is NULL.
  *         - The string contains any character other than '0' or '1'.
  */
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int i, num = 0;
