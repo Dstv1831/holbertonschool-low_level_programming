@@ -19,10 +19,11 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	/* Traverse to the node before idx */
 	for (i = 0; tmp && i < index - 1; i++)
+	{
+		if (!tmp) /* If idx is out of range */
+                return (-1);
 		tmp = tmp->next;
-
-	if (!tmp) /* If idx is out of range */
-		return (-1);
+	}
 
 	if (tmp == *head)
 	{
