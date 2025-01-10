@@ -4,11 +4,14 @@
 #include <stdlib.h>
 
 /**
- * forward declaration of the functions to use
- * when including the header file
+ * binary_to_uint - Convert a binary string to an unsigned integer.
+ * @b: Pointer to a string containing '0' and '1' characters.
  *
+ * Return: The converted unsigned integer value.
+ * Returns 0 if b is NULL. or the string contains
+ * any character other than '0' or '1'.
  */
 
 unsigned int binary_to_uint(const char *b);
 
-#endif
+#endif /* BIT_H */
