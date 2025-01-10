@@ -7,7 +7,6 @@
  * Return: Value of the unsigned int, otherwise NULL
  */
 
-
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int i, num = 0;
