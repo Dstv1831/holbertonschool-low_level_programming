@@ -11,31 +11,29 @@
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *tmp;
-	unsigned int i;
-
+	dlistint_t *tmp = *head;
+	
 	if (*head == NULL)
 		return (-1);
-
-	/* Traverse to the node before idx */
-	for (i = 0; tmp && i < index - 1; i++)
+	
+	for (; index != 0; index--)
 	{
-		if (!tmp) /* If idx is out of range */
-                return (-1);
+		if (tmp == NULL)
+			return (-1);
 		tmp = tmp->next;
 	}
 
 	if (tmp == *head)
 	{
 		*head = tmp->next;
-		if (*head)
+		if (*head != NULL)
 			(*head)->prev = NULL;
 	}
 
 	else
 	{
 		tmp->prev->next = tmp->next;
-		if (tmp->next)
+		if (tmp->next != NULL)
 			tmp->next->prev = tmp->prev;
 	}
 
