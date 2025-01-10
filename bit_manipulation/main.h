@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- * forward declaration of the functions to use 
+ * forward declaration of the functions to use
  * when including the header file
  *
  */
