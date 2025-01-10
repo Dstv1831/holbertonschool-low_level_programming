@@ -1,6 +1,8 @@
 #ifndef BIT_H
 #define BIT_H
 
+#include <stddef.h>
+
 /**
  * File - Header file containing
  * forward declaration for all the functions
