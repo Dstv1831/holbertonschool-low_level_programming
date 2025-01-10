@@ -2,6 +2,7 @@
 #define BIT_H
 
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * binary_to_uint - Convert a binary string to an unsigned integer.
@@ -13,5 +14,6 @@
  */
 
 unsigned int binary_to_uint(const char *b);
+void print_binary(unsigned long int n);
 
 #endif /* BIT_H */
