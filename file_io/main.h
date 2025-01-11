@@ -5,7 +5,7 @@
 #include <fcntl.h>  /* For open() */
 #include <unistd.h> /* For read(), write(), close() */
 #include <sys/stat.h> /* For file permissions */
-
+#include <stdio.h>
 /*
  * Desc: Header file containing prototypes for all functions
  * written in the file_io directory.
